@@ -18,11 +18,13 @@ SELECT id FROM movies WHERE pelicula = 'Titanic';
 
 --4. Listar a todos los actores que aparecen en la película "Titanic".
 
+-- Respuesta: Ver Anexo - Hoja Req4.
+
     -- Query:
 
 SELECT reparto.actor
     FROM movies
-    JOIN reparto ON movies.id = reparto.id
+    INNER JOIN reparto ON movies.id = reparto.id
     WHERE movies.id = 2;
 
 -- 5. Consultar en cuántas películas del top 100 participa Harrison Ford.
